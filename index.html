@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <title>GTU Sem 3 • Study OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">S3</div>
+        <div><strong>Study OS</strong><span>GTU • ICT • Semester 3</span></div>
+      </div>
+      <nav id="nav">
+        <button class="nav-item active" data-view="dashboard">⌂ <span>Dashboard</span></button>
+        <button class="nav-item" data-view="syllabus">▤ <span>Syllabus</span></button>
+        <button class="nav-item" data-view="planner">◷ <span>Deadline Planner</span></button>
+        <button class="nav-item" data-view="timer">◉ <span>Focus Timer</span></button>
+        <button class="nav-item" data-view="ai">✦ <span>AI Study Coach</span></button>
+        <button class="nav-item" data-view="analytics">⌁ <span>Analytics</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-view="settings">⚙ <span>Settings</span></button>
+        <div class="storage-pill"><span class="dot"></span>Saved locally</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">SEMESTER 3 • ICT</p>
+          <h1 id="pageTitle">Your study dashboard</h1>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" id="exportBtn" title="Export backup">↥</button>
+          <button class="icon-btn" id="importBtn" title="Import backup">↧</button>
+          <input id="importFile" type="file" accept=".json" hidden>
+        </div>
+      </header>
+
+      <section id="view-dashboard" class="view active"></section>
+      <section id="view-syllabus" class="view"></section>
+      <section id="view-planner" class="view"></section>
+      <section id="view-timer" class="view"></section>
+      <section id="view-ai" class="view"></section>
+      <section id="view-analytics" class="view"></section>
+      <section id="view-settings" class="view"></section>
+    </main>
+  </div>
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
